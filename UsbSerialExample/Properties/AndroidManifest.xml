@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="Hoho.Android.UsbSerial.Example">
+	<uses-sdk android:minSdkVersion="12" />
+	<uses-feature android:name="android.hardware.usb.accessory" />
+	<application android:label="USB Serial Example" android:icon="@drawable/icon"></application>
+	<intent-filter>
+	    <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+  	</intent-filter>
+  	<meta-data
+      android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" 
+      android:resource="@xml/device_filter" />
+</manifest>
